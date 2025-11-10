@@ -8,3 +8,7 @@ https://www.offenedaten-koeln.de/dataset/kriminalstatistik-stadtgebiet-koeln-201
 
 2005-2014
 https://www.offenedaten-koeln.de/dataset/kriminalstatistik-stadtgebiet-koeln-2014/resource/0f539a34-559c-4ee6-8c7c-96b020708ed9
+
+
+Zweite Hypothese: Desto schlechter das Wetter, desto mehr Unfälle gibt es im Schnitt.
+https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
