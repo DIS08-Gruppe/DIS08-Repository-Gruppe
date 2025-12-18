@@ -1,3 +1,9 @@
+Ogyun Mustafov
+Walaa Harkal
+Heba Haikal
+Souhail Sammy Naji
+Katharina Kratz
+Teo Peters
 Hypothese: Desto schlechter das Wetter, desto mehr Unfälle gibt es im Schnitt.
 H1: Bei schlechten Wetterverhältnissen entstehen mehr Autounfälle.
 H0: Schlechte Wetterverhältnisse haben keinen Einfluss auf die Anzahl der Autounfälle.
