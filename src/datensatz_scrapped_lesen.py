@@ -17,7 +17,6 @@ def print_df_for_month_year(month,year):
         #nutze path lib: einheitliche dir Operationen
         file_name = f"{month}{year}.csv"   
         dir_path = Path("./daten/web_scraping_daten")
-        #dir_path.mkdir(parents=True,exist_ok=True)
         file_path = dir_path /file_name
        
         print_header_month_year(month,year) 
