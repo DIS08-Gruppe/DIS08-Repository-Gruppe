@@ -15,8 +15,8 @@ df["Date"] = pd.to_datetime(
     format="%m/%d/%Y %I:%M:%S %p"
 )
 
-# Jahre 2020–2025 filtern
-df = df[df["Date"].dt.year.between(2020, 2025)]
+# Jahre 2020–2024 filtern
+df = df[df["Date"].dt.year.between(2020, 2024)]
 
 # Hier sortieren 
 df = df.sort_values("Date").reset_index(drop=True)
@@ -34,7 +34,7 @@ else:
     print("Es gibt KEINE fehlenden Daten im Datensatz.")
 
 # Neue CSV speichern
-output_path = Path('.')/ "daten" / "nashville_accidents_2020_2025.csv"
+output_path = Path('.')/ "daten" / "nashville_accidents_2020_2024.csv"
 df.to_csv(output_path, index=False)
 
 print("Datei gespeichert als:")
