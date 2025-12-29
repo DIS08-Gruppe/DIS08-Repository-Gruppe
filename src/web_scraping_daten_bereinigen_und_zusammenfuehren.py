@@ -38,9 +38,9 @@ def load_and_prepare_month_df(month, year, missing_files):
         df_month["Temp_Avg_C"] = df_month["Temp_Avg"].apply(temperature_change_f_to_c)
         df_month["Temp_Min_C"] = df_month["Temp_Min"].apply(temperature_change_f_to_c)
 
-        # Datum aus Jahr, Monat und Tag erstellen, Nutze index,um Monat in nummerische Werte umzuwandeln
+        # Datum aus Jahr, Monat und Tag erstellen, nutze den Index, um den Monat in numerische Werte umzuwandeln
         df_month["Date"] = pd.to_datetime(
-            {"year": year, "month":months.index(month)+1, "day": df_month["Day"]},
+            {"year": year, "month": months.index(month) + 1, "day": df_month["Day"]},
             errors="coerce"
         )
 
@@ -77,7 +77,7 @@ def main():
         print(df_all)
         df_all.to_csv("./daten/bereinigte_web_scraping_daten.csv", index=False)
     else:
-        print("Keine Dateien wurden geladen.")
+        print("Keine Dateien wurden geladen")
 
     # Fehlende Dateien anzeigen
     print("\nFehlende Dateien: ", end="")
