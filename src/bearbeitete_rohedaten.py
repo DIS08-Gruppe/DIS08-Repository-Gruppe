@@ -21,7 +21,7 @@ df = df[df["Date"].dt.year.between(2020, 2024)]
 # Hier sortieren 
 df = df.sort_values("Date").reset_index(drop=True)
 
-# Uhrzeit entfernen → nur Datum
+# Uhrzeit entfernen 
 df["Date"] = df["Date"].dt.date
 
 # Alte Spalte löschen
@@ -33,13 +33,26 @@ if df.isna().any().any():
 else:
     print("Es gibt KEINE fehlenden Daten im Datensatz.")
 
-# Neue CSV speichern
-output_path = Path('.')/ "daten" / "nashville_accidents_2020_2024.csv"
-df.to_csv(output_path, index=False)
+# Unfälle pro Tag aggregieren 
+daily_df = (
+    df.groupby("Date")["Accident Number"]
+      .nunique()
+      .reset_index(name="Accidents_Count")
+)
 
-print("Datei gespeichert als:")
-print(output_path)
+# Prüfung auf fehlende Daten 
+if daily_df.isna().any().any():
+    print("Es gibt fehlende Daten im Tages-Datensatz.")
+else:
+    print("Es gibt KEINE fehlenden Daten im Tages-Datensatz.")
 
+print("\nVorschau:")
+print(daily_df.head(10))
 
+# Tages-Datensatz als CSV speichern
+output_path = Path('.') / "daten" / "nashville_accidents_daily_2020_2024.csv"
+daily_df.to_csv(output_path, index=False)
 
+print("\nCSV-Datei erfolgreich gespeichert unter:")
+print(output_path.resolve())
 
