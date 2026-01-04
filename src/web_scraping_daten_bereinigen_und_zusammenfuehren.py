@@ -38,9 +38,9 @@ def load_and_prepare_month_df(month, year, missing_files):
         df_month["Temp_Avg_C"] = df_month["Temp_Avg"].apply(temperature_change_f_to_c)
         df_month["Temp_Min_C"] = df_month["Temp_Min"].apply(temperature_change_f_to_c)
 
-        # Datum aus Jahr, Monat und Tag erstellen, Nutze index,um Monat in nummerische Werte umzuwandeln
+        # Datum aus Jahr, Monat und Tag erstellen, nutze den Index, um den Monat in numerische Werte umzuwandeln
         df_month["Date"] = pd.to_datetime(
-            {"year": year, "month":months.index(month)+1, "day": df_month["Day"]},
+            {"year": year, "month": months.index(month) + 1, "day": df_month["Day"]},
             errors="coerce"
         )
 
@@ -74,10 +74,16 @@ def main():
     # Alle Monatsdaten zusammenführen und sortieren
     if all_data:
         df_all = pd.concat(all_data, ignore_index=True).sort_values("Date")
+        print("\nVorschau:")
         print(df_all)
-        df_all.to_csv("./daten/bereinigte_web_scraping_daten.csv", index=False)
+        
+        #als CSV-Datei speichern
+        output_path = Path("./daten/bereinigte_web_scraping_daten.csv")
+        df_all.to_csv(output_path, index=False)
+        print("\nCSV-Datei erfolgreich gespeichert unter:")
+        print(output_path.resolve())
     else:
-        print("Keine Dateien wurden geladen.")
+        print("Keine Dateien wurden geladen")
 
     # Fehlende Dateien anzeigen
     print("\nFehlende Dateien: ", end="")
