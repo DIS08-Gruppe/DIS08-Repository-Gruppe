@@ -74,8 +74,14 @@ def main():
     # Alle Monatsdaten zusammenführen und sortieren
     if all_data:
         df_all = pd.concat(all_data, ignore_index=True).sort_values("Date")
+        print("\nVorschau:")
         print(df_all)
-        df_all.to_csv("./daten/bereinigte_web_scraping_daten.csv", index=False)
+        
+        #als CSV-Datei speichern
+        output_path = Path("./daten/bereinigte_web_scraping_daten.csv")
+        df_all.to_csv(output_path, index=False)
+        print("\nCSV-Datei erfolgreich gespeichert unter:")
+        print(output_path.resolve())
     else:
         print("Keine Dateien wurden geladen")
 
