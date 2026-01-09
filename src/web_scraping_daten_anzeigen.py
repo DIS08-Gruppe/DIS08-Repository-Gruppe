@@ -37,6 +37,7 @@ def print_df_for_month_year(month, year, missing_files):
 
 missing_files = []
 
+# Durchläuft alle Monate und Jahre und zeigt die vorhandenen Daten an
 for year in years:
     for month in months:
         print_df_for_month_year(month, year, missing_files)
