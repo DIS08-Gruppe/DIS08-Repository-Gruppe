@@ -1,0 +1,8 @@
+#Rohdaten
+
+#Zu Beginn des Projekts stellte sich die Suche nach geeigneten Rohdaten als schwieriger heraus als erwartet. Viele der verfügbaren Datensätze waren bereits bereinigt oder passten nicht zu unserer Fragestellung. Da wir in unserem Projekt nicht nur Ergebnisse analysieren, sondern im Umgang mit Rohdaten arbeiten, war es uns wichtig, Datensätze zu verwenden, die noch nicht vollständig bereinigt waren.
+#Außerdem benötigten wir zwei unterschiedliche Datensätze, die sich über ein gemeinsames Merkmal miteinander verbinden lassen. Für unsere Fragestellung war das Datum entscheidend, da wir Unfallzahlen mit den jeweiligen Temperaturbedingungen eines Tages verknüpfen wollten. Deshalb entschieden wir uns für einen Unfall-Datensatz von Kaggle und für Wetterdaten von der Plattform Weather Underground.
+#Der Kaggle-Datensatz enthält für jeden Tag das Datum sowie die Anzahl der Verkehrsunfälle. Der Weather-Underground-Datensatz liefert zu denselben Tagen Temperatur Informationen, insbesondere die maximale, minimale und durchschnittliche Temperatur. Dadurch eigneten sich beide Datensätze gut, um sie später zusammenzuführen und den Zusammenhang zwischen Temperatur und Unfallhäufigkeit zu untersuchen.
+#Allerdings lagen die Daten in unterschiedlichen Formaten vor. Die Datumsangaben waren nicht einheitlich, und die Temperaturwerte wurden im US-amerikanischen Maßsystem in Fahrenheit angegeben. Daher war eine umfangreiche Umformatierung und Datenbereinigung notwendig, bevor die Datensätze miteinander kombiniert werden konnten. Auch wenn dies zusätzlichen Aufwand bedeutete, erwies sich dieser Schritt als sehr sinnvoll, da wir zentrale Inhalte des Projekts wie Data Cleaning, Formatumwandlungen und das Mergen mehrerer Datensätze praktisch anwenden konnten.
+
+
