@@ -14,7 +14,7 @@ df_temperature_daily  = pd.read_csv(TEMPERATURE_DAILY_PATH)
 df_accidents_daily["Date"]   = pd.to_datetime(df_accidents_daily["Date"], errors="coerce").dt.date
 df_temperature_daily["Date"] = pd.to_datetime(df_temperature_daily["Date"], errors="coerce").dt.date
 
-# Vergleich der Datumswerte vor dem Merge (Welche Tage fehlen in welchem Datensatz?)
+# Vergleich der Datumswerte vor dem Merge (Welche Tage fehlen in welchem Datensatz ?)
 missing_dates = df_temperature_daily[["Date"]].drop_duplicates().merge(
     df_accidents_daily[["Date"]].drop_duplicates(),
     on="Date",
