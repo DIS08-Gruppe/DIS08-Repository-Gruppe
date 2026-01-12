@@ -65,6 +65,7 @@ def main():
     all_data = []
     missing_files = []
 
+    # Alle Jahre und Monate durchlaufen
     for year in years:
         for month in months:
             df_ready = load_and_prepare_month_df(month, year, missing_files)
@@ -77,7 +78,7 @@ def main():
         print("\nVorschau:")
         print(df_all)
         
-        #als CSV-Datei speichern
+        # Als CSV-Datei speichern
         output_path = Path("./daten/bereinigte_web_scraping_daten.csv")
         df_all.to_csv(output_path, index=False)
         print("\nCSV-Datei erfolgreich gespeichert unter:")
