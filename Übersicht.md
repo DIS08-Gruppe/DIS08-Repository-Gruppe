@@ -6,19 +6,17 @@ Heba Haikal
 Souhail Sammy Naji
 Katharina Kratz
 Teo Peters
-Hypothese: Desto schlechter das Wetter, desto mehr Unfälle gibt es im Schnitt.
-H1: Bei schlechten Wetterverhältnissen entstehen mehr Autounfälle.
-H0: Schlechte Wetterverhältnisse haben keinen Einfluss auf die Anzahl der Autounfälle.
-https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
-https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2019-8
 
-Projektdokumentation:
-Datensuche im Web. 
-Datenset auswahl: https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
-Idee: Hypothese: Desto schlechter das Wetter, desto mehr Unfälle gibt es im Schnitt.
-Hypothese aufstellen: 
-H1: Bei schlechten Wetterverhältnissen entstehen mehr Autounfälle.
-H0: Schlechte Wetterverhältnisse haben keinen Einfluss auf die Anzahl der Autounfälle.
-Zusätzliche Daten scrapen:
-Verwendeter Code:
-Quelle Code:
+Forschungsfrage und Hypothesen
+
+Die zentrale Forschungsfrage dieses Projekts lautet:
+Besteht in der Stadt Nashville (USA) ein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle im Zeitraum von 2020 bis 2024?
+
+Die Alternativhypothese lautet:
+H₁: Je niedriger die tägliche Durchschnittstemperatur, desto höher ist die Anzahl der Verkehrsunfälle.
+
+Die Nullhypothese lautet:
+H₀: Es besteht kein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle in der Stadt Nashville (USA) im Zeitraum von 2020 bis 2024.
+
+https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
+https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2020-01
