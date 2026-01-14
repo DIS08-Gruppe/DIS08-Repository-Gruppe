@@ -1,26 +1,27 @@
-Teammitglieder
+# Übersicht
 
-Ogyun Mustafov
-Walaa Harkal
-Heba Haikal
-Souhail Sammy Naji
-Katharina Kratz
-Teo Peters
+## Teammitglieder
+- Ogyun Mustafov
+- Walaa Harkal
+- Heba Haikal
+- Souhail Sammy Naji
+- Katharina Kratz
+- Teo Peters
 
-Forschungsfrage und Hypothesen
+## Forschungsfrage und Hypothesen
 
-Die zentrale Forschungsfrage dieses Projekts lautet:
+**Forschungsfrage:**  
 Besteht in der Stadt Nashville (USA) ein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle im Zeitraum von 2020 bis 2024?
 
-Die Alternativhypothese lautet:
-H₁: Je niedriger die tägliche Durchschnittstemperatur, desto höher ist die Anzahl der Verkehrsunfälle.
+**Alternativhypothese (H₁):**  
+Je niedriger die tägliche Durchschnittstemperatur, desto höher ist die Anzahl der Verkehrsunfälle.
 
-Die Nullhypothese lautet:
-H₀: Es besteht kein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle in der Stadt Nashville (USA) im Zeitraum von 2020 bis 2024.
+**Nullhypothese (H₀):**  
+Es besteht kein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle in der Stadt Nashville (USA) im Zeitraum von 2020 bis 2024.
 
+## Rohdaten
+- Kaggle: https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
 
-Rohdaten:
-https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
+## Beispiel Webscraping (Januar 2020)
+- Weather Underground: https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2020-01
 
-Beispiellink für die Webscraping Daten Januar 2020:
-https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2020-01
