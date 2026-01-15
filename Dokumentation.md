@@ -120,3 +120,9 @@ Falls eine CSV-Datei nicht vorhanden ist, wird dies erkannt und die fehlende Dat
 
 <img width="1572" height="128" alt="Screenshot 2026-01-15 123023" src="https://github.com/user-attachments/assets/1f8619e7-5675-4ec9-92c6-d2088d57641a" />
 
+Beim Ausführen des Skripts wurde im Terminal die Meldung **„Keine fehlenden Dateien“** ausgegeben.  
+Dies bestätigt, dass alle erwarteten Monatsdateien für den gesamten Zeitraum vollständig vorliegen.
+
+Dieser Schritt diente der Überprüfung der Vollständigkeit und Struktur der Web-Scraping-Daten und bildete die notwendige Grundlage, um im nächsten Schritt mit der **Datenbereinigung** beginnen zu können.
+
+
