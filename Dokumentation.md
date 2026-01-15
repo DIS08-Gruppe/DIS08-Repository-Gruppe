@@ -106,7 +106,7 @@ Der oben gezeigte Prozess wurde für jeden Monat einzeln durchgeführt. So wurde
 
 [web-scraping-daten-anzeigen](src/web_scraping_daten_anzeigen.py)
 
-Zur Kontrolle der gesammelten Web-Scraping-Daten wurde ein Python-Skript zur Anzeige der Daten erstellt. Dabei wurden alle gespeicherten CSV-Dateien aus dem entsprechenden Ordner **web_scraping_daten** eingelesen.
+Zur Kontrolle der gesammelten Web-Scraping-Daten wurde ein Python-Skript zur Anzeige der Daten erstellt. Dabei wurden alle gespeicherten CSV-Dateien aus dem entsprechenden Ordner [web_scraping_daten](daten/web_scraping_daten) eingelesen.
 
 Das Skript durchläuft systematisch alle Monate und Jahre im Zeitraum von **2020 bis 2024** und versucht, die jeweilige CSV-Datei zu laden.
 
