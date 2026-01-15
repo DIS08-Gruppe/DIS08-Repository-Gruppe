@@ -124,4 +124,19 @@ Falls eine CSV-Datei nicht vorhanden ist, wird dies erkannt und die fehlende Dat
 Beim Ausführen des Skripts wurde im Terminal die Meldung **„Keine fehlenden Dateien“** ausgegeben. Dies bestätigt, dass alle erwarteten Monatsdateien für den gesamten Zeitraum vollständig vorliegen.
 Dieser Schritt diente der Überprüfung der Vollständigkeit und Struktur der Web-Scraping-Daten und bildete die notwendige Grundlage, um im nächsten Schritt mit der **Datenbereinigung** beginnen zu können.
 
+### 2.4 Bereinigung und Zusammenführung der Web-Scraping-Daten
+
+Zur Bereinigung und Zusammenführung der Web-Scraping-Daten wurde ein Python-Skript verwendet, das alle monatlichen CSV-Dateien aus dem Zeitraum **2020–2024** aus dem Ordner **web_scraping_daten** einliest.
+
+Für jeden Monat wurden zunächst nur die relevanten Temperaturspalten **Temp_Max**, **Temp_Avg** und **Temp_Min** sowie der Tag (**Day**) ausgewählt. Für die spätere Analyse wurde insbesondere **Temp_Avg_C** als tägliche Durchschnittstemperatur verwendet.
+
+Anschließend wurden die Temperaturwerte von **Fahrenheit** in **Celsius** umgerechnet und auf ganze Zahlen gerundet. Die Umrechnung erfolgte, da Celsius die in Europa übliche Temperatureinheit ist und eine bessere Vergleichbarkeit der Daten ermöglicht. Zudem erleichtert die Verwendung von Celsius die Interpretation der Ergebnisse in den späteren Analyse- und Modellierungsschritten.
+
+Danach wurde aus **Jahr**, **Monat** und **Tag** ein einheitliches Datumsfeld (**Date**) erstellt, um eine konsistente Zeitstruktur für die weitere Analyse zu erhalten. Dieses Datumsformat bildet die Grundlage für die spätere Zusammenführung der Temperaturdaten mit den Verkehrsunfalldaten. Zeilen mit ungültigem oder fehlendem Datum wurden entfernt, um eine saubere Zeitreihe sicherzustellen.
+
+Im nächsten Schritt wurden alle bereinigten Monatsdaten zu einem gemeinsamen Datensatz zusammengeführt und nach dem Datum sortiert. Der bereinigte Gesamtdatensatz wurde anschließend als CSV-Datei unter dem Namen **bereinigte_web_scraping_daten.csv** gespeichert.
+
+Zusätzlich wurde im Skript eine Fehlerbehandlung implementiert: Falls eine Monatsdatei nicht gefunden wird, wird dies erkannt und die entsprechende Datei protokolliert. Darüber hinaus werden auch andere mögliche Fehler beim Einlesen oder Verarbeiten der Dateien abgefangen und im Terminal ausgegeben. Dies ermöglicht eine transparente Kontrolle möglicher Probleme während der Datenverarbeitung.
+
+
 
