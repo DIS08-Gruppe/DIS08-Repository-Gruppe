@@ -52,10 +52,10 @@ Im zweiten Schritt wurde das Datumsformat vereinheitlicht und in ein festes Form
 
 Anschließend wurden ausschließlich die Daten aus dem Zeitraum von 2020 bis 2024 berücksichtigt. Die Datumswerte innerhalb der Jahre wurden chronologisch sortiert, da sie auf der Kaggle-Datensatz nicht korrekt aufeinander folgend vorlagen. Darüber hinaus wurde die Uhrzeit aus Date and Time entfernt, da für das Projekt und die Hypothese das Datum relevant ist. Nach der Entfernung der Uhrzeit wurde der Name der Spalte von Date and Time in Date geändert. Die Unfälle pro Tag wurden aggregiert, sodass die Datenmenge in der CSV-Datei reduziert und sinnvoll für das weitere Mergen der Datensätze aufbereitet wurde. Für die Aggregation wurde die Funktion unique benutzt, da jeder Unfall eine eigene Id hat. Zusätzlich wurde geprüft, ob fehlende Daten vorhanden sind. Am Ende wurde die neue und bereinigte CSV-Datei gespeichert.
 
-[Bearbeitung der Rohdaten](../src/bearbeitete_rohedaten.py)
+[Bearbeitung der Rohdaten](src/bearbeitete_rohedaten.py)
 
 Der Python-Code zur Verarbeitung der Rohdaten wurde im Terminal erfolgreich ausgeführt. Dabei wurde überprüft, ob fehlende Werte im Datensatz vorhanden sind. Die Ausgabe zeigte, dass weder im ursprünglichen Datensatz noch im Tagesdatensatz fehlende Daten enthalten sind.  
 Anschließend wurden die Unfälle nach Datum zusammengefasst und als Übersicht ausgegeben. Zum Schluss wurde die bereinigte Datei als CSV gespeichert. Diese Datei wird in den nächsten Schritten für die weitere Verarbeitung und die Zusammenführung mit den Temperaturdaten verwendet.
 
-[Unfalldaten pro Tag (2020–2024)](../daten/nashville_accidents_daily_2020_2024.csv)
+[Unfalldaten pro Tag (2020–2024)](daten/nashville_accidents_daily_2020_2024.csv)
 
