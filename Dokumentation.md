@@ -138,5 +138,13 @@ Im nächsten Schritt wurden alle bereinigten Monatsdaten zu einem gemeinsamen Da
 
 Zusätzlich wurde im Skript eine Fehlerbehandlung implementiert: Falls eine Monatsdatei nicht gefunden wird, wird dies erkannt und die entsprechende Datei protokolliert. Darüber hinaus werden auch andere mögliche Fehler beim Einlesen oder Verarbeiten der Dateien abgefangen und im Terminal ausgegeben. Dies ermöglicht eine transparente Kontrolle möglicher Probleme während der Datenverarbeitung.
 
+<img width="1248" height="541" alt="Screenshot 2026-01-15 135006" src="https://github.com/user-attachments/assets/e4aa9c5d-8117-4d3f-9475-acc602d1c3bf" />
+
+Nach dem Ausführen des Skripts wurde im Terminal eine Vorschau der bereinigten Daten angezeigt. Diese Vorschau zeigt die Spalten **Date** sowie die **maximale, durchschnittliche und minimale** Temperatur nach der Umrechnung in Celsius. Die Daten wurden chronologisch verarbeitet und ausgegeben.
+
+Zudem wurde die erfolgreiche Speicherung der bereinigten Daten in einer einzelnen CSV-Datei bestätigt. Die Datei wurde unter dem Namen **„bereinigte_web_scraping_daten.csv“** gespeichert.
+
+Die Meldung **„Keine fehlenden Dateien“** zeigt, dass alle erwarteten monatlichen Dateien vorhanden waren und erfolgreich verarbeitet wurden. Die Terminal-Ausgabe diente somit als Bestätigung für die erfolgreiche Datenbereinigung und Zusammenführung der Web-Scraping-Daten.
+
 
 
