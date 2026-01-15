@@ -165,6 +165,7 @@ Nach dem Ausführen des Merge-Skripts wurde im Terminal zunächst ein Vergleich 
 
 Nach dem Merge wurde eine Prüfung auf fehlende Werte durchgeführt. Die Ausgabe bestätigte, dass im zusammengeführten Datensatz keine fehlenden Werte vorhanden sind. Anschließend wurde die erfolgreiche Speicherung des gemergten Datensatzes als CSV-Datei  
 **„ [merged_nashville_accidents_temperature_daily_2020_2024.csv](daten/merged_nashville_accidents_temperature_daily_2020_2024.csv)“** bestätigt.
+
 Zum Abschluss wurde im Terminal eine Vorschau des finalen Datensatzes angezeigt, die die täglichen Unfallzahlen sowie die zugehörigen Temperaturwerte enthält. Diese Vorschau bestätigt die korrekte Struktur sowie die chronologische Ordnung der zusammengeführten Daten.
 
 
