@@ -56,7 +56,7 @@ Anschließend wurden ausschließlich die Daten aus dem Zeitraum von 2020 bis 202
 
 [Bearbeitung der Rohdaten](src/bearbeitete_rohedaten.py)
 
-![Bearbeitete Rohdaten](terminal_ausgabe/Bearbeitete_Rohdaten.png)
+
 
 <img width="1170" height="512" alt="Bearbeitete_Rohdaten" src="https://github.com/user-attachments/assets/de72f0d5-7f46-42b4-b745-4bda9ce03aa5" />
 
