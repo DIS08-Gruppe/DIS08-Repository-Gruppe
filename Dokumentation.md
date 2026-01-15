@@ -143,7 +143,7 @@ Zusätzlich wurde im Skript eine Fehlerbehandlung implementiert: Falls eine Mona
 
 Nach dem Ausführen des Skripts wurde im Terminal eine Vorschau der bereinigten Daten angezeigt. Diese Vorschau zeigt die Spalten **Date** sowie die **maximale, durchschnittliche und minimale** Temperatur nach der Umrechnung in Celsius. Die Daten wurden chronologisch verarbeitet und ausgegeben.
 
-Zudem wurde die erfolgreiche Speicherung der bereinigten Daten in einer einzelnen CSV-Datei bestätigt. Die Datei wurde unter dem Namen **„bereinigte_web_scraping_daten.csv“** gespeichert. [daten/bereinigte_web_scraping_daten.csv](daten/bereinigte_web_scraping_daten.csv)
+Zudem wurde die erfolgreiche Speicherung der bereinigten Daten in einer einzelnen CSV-Datei bestätigt. Die Datei wurde unter dem Namen **„[bereinigte_web_scraping_daten.csv](daten/bereinigte_web_scraping_daten.csv)“** gespeichert. 
 
 Die Meldung **„Keine fehlenden Dateien“** zeigt, dass alle erwarteten monatlichen Dateien vorhanden waren und erfolgreich verarbeitet wurden. Die Terminal-Ausgabe diente somit als Bestätigung für die erfolgreiche Datenbereinigung und Zusammenführung der Web-Scraping-Daten.
 
