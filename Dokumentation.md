@@ -128,7 +128,7 @@ Dieser Schritt diente der Überprüfung der Vollständigkeit und Struktur der We
 
 Zur Bereinigung und Zusammenführung der Web-Scraping-Daten wurde ein Python-Skript verwendet, das alle monatlichen CSV-Dateien aus dem Zeitraum **2020–2024** aus dem Ordner **web_scraping_daten** einliest.
 
-Für jeden Monat wurden zunächst nur die relevanten Temperaturspalten **Temp_Max**, **Temp_Avg** und **Temp_Min** sowie der Tag (**Day**) ausgewählt. Für die spätere Analyse wurde insbesondere **Temp_Avg_C** als tägliche Durchschnittstemperatur verwendet.
+Für jeden Monat wurden zunächst nur die relevanten Temperaturspalten **Temp_Max**, **Temp_Avg** und **Temp_Min** sowie der Tag (**Day**) ausgewählt. Für die spätere Analyse wurde **Temp_Avg_C** als tägliche Durchschnittstemperatur verwendet.
 
 Anschließend wurden die Temperaturwerte von **Fahrenheit** in **Celsius** umgerechnet und auf ganze Zahlen gerundet. Die Umrechnung erfolgte, da Celsius die in Europa übliche Temperatureinheit ist und eine bessere Vergleichbarkeit der Daten ermöglicht. Zudem erleichtert die Verwendung von Celsius die Interpretation der Ergebnisse in den späteren Analyse- und Modellierungsschritten.
 
