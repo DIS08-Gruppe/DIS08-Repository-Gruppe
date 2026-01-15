@@ -125,7 +125,7 @@ Beim Ausführen des Skripts wurde im Terminal die Meldung **„Keine fehlenden D
 Dieser Schritt diente der Überprüfung der Vollständigkeit und Struktur der Web-Scraping-Daten und bildete die notwendige Grundlage, um im nächsten Schritt mit der **Datenbereinigung** beginnen zu können.
 
 ### 2.4 Bereinigung und Zusammenführung der Web-Scraping-Daten
-
+[Bearbeitung der Rohdaten](src/bearbeitete_rohedaten.py)
 Zur Bereinigung und Zusammenführung der Web-Scraping-Daten wurde ein Python-Skript verwendet, das alle monatlichen CSV-Dateien aus dem Zeitraum **2020–2024** aus dem Ordner **web_scraping_daten** einliest.
 
 Für jeden Monat wurden zunächst nur die relevanten Temperaturspalten **Temp_Max**, **Temp_Avg** und **Temp_Min** sowie der Tag (**Day**) ausgewählt. Für die spätere Analyse wurde insbesondere **Temp_Avg_C** als tägliche Durchschnittstemperatur verwendet.
