@@ -28,7 +28,7 @@ Die Nullhypothese lautet:
 Diese Hypothesen werden mithilfe der ausgewählten Unfall- und Wetterdatensätze empirisch überprüft. Ziel der Analyse ist es, statistisch zu untersuchen, ob ein relevanter Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle vorliegt.
 
 
-##1.Rohdaten
+## 1.Rohdaten
 
 ### 1.1 Auswahl der Daten
 
