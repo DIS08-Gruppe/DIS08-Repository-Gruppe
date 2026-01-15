@@ -27,3 +27,18 @@ Die Nullhypothese lautet:
 
 Diese Hypothesen werden mithilfe der ausgewählten Unfall- und Wetterdatensätze empirisch überprüft. Ziel der Analyse ist es, statistisch zu untersuchen, ob ein relevanter Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle vorliegt.
 
+
+## Rohdaten
+
+### 1.1 Auswahl der Daten
+
+Wie anfangs bereits erwähnt, stellte sich die Suche nach geeigneten Rohdaten als schwieriger heraus als erwartet. Viele der verfügbaren Datensätze waren bereits bereinigt oder passten nicht zu unserer Fragestellung. Da wir in unserem Projekt nicht nur Ergebnisse analysieren, sondern auch praktisch mit Rohdaten arbeiten wollten, war es uns wichtig, Datensätze zu verwenden, die noch nicht vollständig vorverarbeitet waren. Außerdem benötigten wir zwei unterschiedliche Datensätze, die sich über ein gemeinsames Merkmal miteinander verbinden lassen. Für unsere Fragestellung war das Datum entscheidend, da wir Unfallzahlen mit den jeweiligen Temperaturbedingungen eines Tages verknüpfen wollten. Deshalb entschieden wir uns für einen Unfall-Datensatz von Kaggle und für Wetterdaten von der Plattform Weather Underground.
+
+Der Kaggle-Datensatz enthält für jeden Tag das Datum sowie die Anzahl der Verkehrsunfälle. Die Wetterdaten von Weather Underground liefern zu denselben Tagen Temperatur Informationen, insbesondere die maximale, minimale und durchschnittliche Temperatur. Dadurch eigneten sich beide Datensätze gut, um sie später zusammenzuführen und den Zusammenhang zwischen Temperatur und Unfallhäufigkeit zu untersuchen.
+
+Allerdings lagen die Daten in unterschiedlichen Formaten vor. Die Datumsangaben waren nicht einheitlich, und die Temperaturwerte wurden im US-amerikanischen Maßsystem in Fahrenheit angegeben. Daher war eine umfangreiche Umformatierung und Datenbereinigung notwendig, bevor die Datensätze miteinander kombiniert werden konnten. Auch wenn dies zusätzlichen Aufwand bedeutete, erwies sich dieser Schritt als sehr sinnvoll, da wir zentrale Inhalte des Projekts wie Data Cleaning, Formatumwandlungen und das Mergen mehrerer Datensätze praktisch anwenden konnten.
+
+**Link zu den Rohdaten:**  
+https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
+
+
