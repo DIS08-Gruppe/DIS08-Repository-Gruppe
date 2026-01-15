@@ -136,7 +136,7 @@ Anschließend wurden die Temperaturwerte von **Fahrenheit** in **Celsius** umger
 
 Danach wurde aus **Jahr**, **Monat** und **Tag** ein Datumsfeld (**Date**) erstellt, um eine einheitliche Zeitstruktur für die weitere Analyse zu erhalten. Das einheitliche Datumsformat bildet die Grundlage für die spätere Zusammenführung der Temperaturdaten mit den Verkehrsunfalldaten. Zeilen mit ungültigem oder fehlendem Datum wurden entfernt, um eine saubere Zeitreihe zu erhalten.
 
-Im nächsten Schritt wurden alle bereinigten Monatsdaten zu einem gemeinsamen Datensatz zusammengeführt und nach dem Datum sortiert. Der bereinigte Gesamtdatensatz wurde anschließend als CSV-Datei unter dem Namen **bereinigte_web_scraping_daten.csv** gespeichert.
+Im nächsten Schritt wurden alle bereinigten Monatsdaten zu einem gemeinsamen Datensatz zusammengeführt und nach dem Datum sortiert. Der bereinigte Gesamtdatensatz wurde anschließend als CSV-Datei unter dem Namen **[bereinigte_web_scraping_daten.csv](daten/bereinigte_web_scraping_daten.csv)** gespeichert.
 
 Zusätzlich wurde im Skript eine Fehlerbehandlung implementiert: Falls eine Monatsdatei nicht gefunden wird, wird dies erkannt und die entsprechende Datei protokolliert. Darüber hinaus werden auch andere mögliche Fehler beim Einlesen oder Verarbeiten der Dateien abgefangen und im Terminal ausgegeben. Dies ermöglicht eine transparente Kontrolle möglicher Probleme während der Datenverarbeitung.
 
