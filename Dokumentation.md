@@ -41,4 +41,21 @@ Allerdings lagen die Daten in unterschiedlichen Formaten vor. Die Datumsangaben 
 **Link zu den Rohdaten:**  
 https://www.kaggle.com/datasets/justinwilcher/nashville-accident-reports-jan-2018-apl-2025
 
+### 1.2 Bereinigung der Rohdaten
+
+Die Rohdaten beziehen sich auf Verkehrsunfälle in Nashville im Zeitraum von Januar 2018 bis April 2025. Bezüglich Datenbereinigung wurde für unsere Untersuchung relevanten Spalten ausgewählt:
+
+- Accident Number  
+- Date and Time  
+
+Im zweiten Schritt wurde das Datumsformat vereinheitlicht und in ein festes Format überführt. Dies ist notwendig, um sicherzustellen, dass die Web-Scraping-Daten und die Rohdaten korrekt zusammengeführt (gemerged) werden können.
+
+Anschließend wurden ausschließlich die Daten aus dem Zeitraum von 2020 bis 2024 berücksichtigt. Die Datumswerte innerhalb der Jahre wurden chronologisch sortiert, da sie auf der Kaggle-Datensatz nicht korrekt aufeinander folgend vorlagen. Darüber hinaus wurde die Uhrzeit aus Date and Time entfernt, da für das Projekt und die Hypothese das Datum relevant ist. Nach der Entfernung der Uhrzeit wurde der Name der Spalte von Date and Time in Date geändert. Die Unfälle pro Tag wurden aggregiert, sodass die Datenmenge in der CSV-Datei reduziert und sinnvoll für das weitere Mergen der Datensätze aufbereitet wurde. Für die Aggregation wurde die Funktion unique benutzt, da jeder Unfall eine eigene Id hat. Zusätzlich wurde geprüft, ob fehlende Daten vorhanden sind. Am Ende wurde die neue und bereinigte CSV-Datei gespeichert.
+
+[Bearbeitung der Rohdaten](../src/bearbeitete_rohedaten.py)
+
+Der Python-Code zur Verarbeitung der Rohdaten wurde im Terminal erfolgreich ausgeführt. Dabei wurde überprüft, ob fehlende Werte im Datensatz vorhanden sind. Die Ausgabe zeigte, dass weder im ursprünglichen Datensatz noch im Tagesdatensatz fehlende Daten enthalten sind.  
+Anschließend wurden die Unfälle nach Datum zusammengefasst und als Übersicht ausgegeben. Zum Schluss wurde die bereinigte Datei als CSV gespeichert. Diese Datei wird in den nächsten Schritten für die weitere Verarbeitung und die Zusammenführung mit den Temperaturdaten verwendet.
+
+[Unfalldaten pro Tag (2020–2024)](../daten/nashville_accidents_daily_2020_2024.csv)
 
