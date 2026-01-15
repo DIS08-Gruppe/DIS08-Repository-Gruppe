@@ -65,3 +65,40 @@ Anschließend wurden die Unfälle nach Datum zusammengefasst und als Übersicht 
 
 [Unfalldaten pro Tag (2020–2024)](daten/nashville_accidents_daily_2020_2024.csv)
 
+
+## 2. Web-Scraping
+
+### 2.1 Auswahl der Web-Scraping-Daten (Nashville, USA)
+
+Für die Analyse wurden die täglichen Wetterdaten für die Stadt Nashville (USA) im Zeitraum **01.01.2020 bis 31.12.2024** gesammelt. Diese Daten bilden die Grundlage der Web-Scraping-Daten für die spätere Untersuchung des Zusammenhangs zwischen Temperatur und Verkehrsunfällen.
+
+Die Wetterdaten wurden von der Website **Weather Underground (Wunderground)** bezogen. Auf dieser Website wird für jeden Monat eine Tabelle mit dem Titel **„Daily Observations“** angezeigt, die alle verfügbaren täglichen Wetterparameter enthält.
+
+**Beispiel-Link (Januar 2020):**  
+https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2020-1
+
+Die Daten sind auf der Website monatlich organisiert, deswegen mussten für den Zeitraum von fünf Jahren (2020–2024) **60 Monatsseiten** (12 Monate × 5 Jahre) separat abgerufen werden.
+
+Im Web-Scraping-Schritt wurde die gesamte Tabelle der jeweiligen Monatsseite heruntergeladen. Das bedeutet, dass alle angezeigten Wettervariablen (z. B. Temperatur, Luftfeuchtigkeit, Wind, Niederschlag usw.) zunächst gespeichert wurden. Die Auswahl der für die Analyse relevanten Variablen erfolgte nicht beim Download, sondern erst während der Datenbereinigung der Web-Scraping-Daten.
+
+---
+
+### 2.2 Herunterladen der Web-Scraping-Daten
+
+Da die Wettertabelle auf der Webseite dynamisch mit JavaScript erzeugt wurde, wurde der HTML-Code der Tabelle manuell aus dem Browser kopiert. Der kopierte Code wurde anschließend im **Visual Studio Code** als HTML-Datei gespeichert, indem die Datei mit der Endung `.html` abgelegt wurde.
+
+Nach dem Speichern konnte die Tabelle lokal im Browser korrekt angezeigt werden. Damit lag die Wettertabelle als statische HTML-Datei vor und konnte weiterverarbeitet werden. Dieser Vorgang wurde für alle Monate im Zeitraum von **2020 bis 2024** durchgeführt (insgesamt 60 Monate).
+
+Die Weiterverarbeitung der Wetterdaten erfolgte mit einem Python-Skript:  
+[web-scraping-daten-download](src/web_scraping_daten_download.py)
+
+Das folgende Skript zeigt beispielhaft die Extraktion der Daten für einen Monat (Januar 2024). Dabei wurden die Bibliotheken **BeautifulSoup** zur Analyse der HTML-Dateien und **pandas** zur Strukturierung der Daten verwendet:
+
+- Zuerst wurde die HTML-Datei eines Monats eingelesen und ausgewertet.  
+- Anschließend wurde die Wettertabelle mit den monatlichen Wetterdaten identifiziert.  
+- Aus der Tabelle wurden alle Variablen wie Temperatur, Taupunkt, Luftfeuchtigkeit, Wind, Luftdruck und Niederschlag extrahiert.  
+- Für die Tabelle mit den Spalten **Maximum**, **Durchschnitt** und **Minimum** wurde eine separate Parser-Funktion verwendet.  
+- Die extrahierten Tagesdaten eines Monats wurden in einem pandas DataFrame zusammengeführt und als CSV-Datei gespeichert.
+
+Der oben gezeigte Prozess wurde für jeden Monat einzeln durchgeführt. So wurde für jede HTML-Datei eine passende CSV-Datei erstellt. Diese Struktur ermöglichte eine übersichtliche Weiterverarbeitung der Daten und bildete die Grundlage für die Bereinigung und Zusammenführung der Web-Scraping-Daten.
+
