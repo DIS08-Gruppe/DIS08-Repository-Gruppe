@@ -90,10 +90,9 @@ Da die Wettertabelle auf der Webseite dynamisch mit JavaScript erzeugt wurde, wu
 
 Nach dem Speichern konnte die Tabelle lokal im Browser korrekt angezeigt werden. Damit lag die Wettertabelle als statische HTML-Datei vor und konnte weiterverarbeitet werden. Dieser Vorgang wurde für alle Monate im Zeitraum von **2020 bis 2024** durchgeführt (insgesamt 60 Monate).
 
-Die Weiterverarbeitung der Wetterdaten erfolgte mit einem Python-Skript:  
-[web-scraping-daten-download](src/web_scraping_daten_download.py)
-
 Das folgende Skript zeigt beispielhaft die Extraktion der Daten für einen Monat (Januar 2024). Dabei wurden die Bibliotheken **BeautifulSoup** zur Analyse der HTML-Dateien und **pandas** zur Strukturierung der Daten verwendet:
+
+[web-scraping-daten-download](src/web_scraping_daten_download.py)
 
 - Zuerst wurde die HTML-Datei eines Monats eingelesen und ausgewertet.  
 - Anschließend wurde die Wettertabelle mit den monatlichen Wetterdaten identifiziert.  
