@@ -114,15 +114,14 @@ Das Skript durchläuft systematisch alle Monate und Jahre im Zeitraum von **2020
 Für jeden Monat und jedes Jahr werden die vorhandenen Wetterdaten im Terminal ausgegeben. Vor der Ausgabe der jeweiligen Tabelle erscheint im Terminal eine Überschrift mit dem entsprechenden Monat und Jahr.
 
 Falls eine CSV-Datei nicht vorhanden ist, wird dies erkannt und die fehlende Datei protokolliert.
+
 <img width="1422" height="141" alt="Screenshot 2026-01-15 123254" src="https://github.com/user-attachments/assets/e9959c37-cd22-46d9-9b75-60068f177339" />
 
 <img width="1479" height="162" alt="Screenshot 2026-01-15 123152" src="https://github.com/user-attachments/assets/24890222-e580-41c1-92e3-81d9f447fe0a" />
 
 <img width="1572" height="128" alt="Screenshot 2026-01-15 123023" src="https://github.com/user-attachments/assets/1f8619e7-5675-4ec9-92c6-d2088d57641a" />
 
-Beim Ausführen des Skripts wurde im Terminal die Meldung **„Keine fehlenden Dateien“** ausgegeben.  
-Dies bestätigt, dass alle erwarteten Monatsdateien für den gesamten Zeitraum vollständig vorliegen.
-
+Beim Ausführen des Skripts wurde im Terminal die Meldung **„Keine fehlenden Dateien“** ausgegeben. Dies bestätigt, dass alle erwarteten Monatsdateien für den gesamten Zeitraum vollständig vorliegen.
 Dieser Schritt diente der Überprüfung der Vollständigkeit und Struktur der Web-Scraping-Daten und bildete die notwendige Grundlage, um im nächsten Schritt mit der **Datenbereinigung** beginnen zu können.
 
 
