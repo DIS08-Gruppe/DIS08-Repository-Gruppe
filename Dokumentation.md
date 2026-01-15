@@ -149,7 +149,6 @@ Die Meldung **„Keine fehlenden Dateien“** zeigt, dass alle erwarteten monatl
 
 ## 3. Zusammenführung der bereinigten Unfall- und Temperaturdaten
 [merge](src/merge.py)
-src/merge.py
 Zur Zusammenführung der bereinigten Rohdaten (Verkehrsunfälle) mit den bereinigten Web-Scraping-Daten (Temperaturdaten) wurde ein Python-Skript verwendet. Nach dem Einlesen der beiden CSV-Dateien wurden die Datumsspalten in beiden Datensätzen erneut in ein einheitliches Datumsformat umgewandelt, da CSV-Dateien keine Datentypen speichern und Datumswerte beim Laden häufig als Text (String) interpretiert werden. Diese Vereinheitlichung ist notwendig, da die Zusammenführung der Daten auf Basis des Datums erfolgt.
 
 Vor dem Merge wurde ein Vergleich der Datumswerte durchgeführt, um mögliche zeitliche Abweichungen zwischen den beiden Datensätzen zu identifizieren. Im nächsten Schritt wurden die beiden Datensätze mithilfe eines Inner Joins über das Datumsfeld zusammengeführt, sodass nur Tage in den finalen Datensatz übernommen wurden, für die sowohl Unfall- als auch Temperaturdaten vorlagen.
