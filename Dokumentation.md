@@ -20,10 +20,10 @@ Die zentrale Forschungsfrage dieses Projekts lautet:
 ***Besteht in der Stadt Nashville (USA) ein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle im Zeitraum von 2020 bis 2024?***
 
 Die Alternativhypothese lautet:  
-**H₁: Je niedriger die tägliche Durchschnittstemperatur, desto höher ist die Anzahl der Verkehrsunfälle.**
+***H₁: Je niedriger die tägliche Durchschnittstemperatur, desto höher ist die Anzahl der Verkehrsunfälle.***
 
 Die Nullhypothese lautet:  
-**H₀: Es besteht kein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle in der Stadt Nashville (USA) im Zeitraum von 2020 bis 2024.**
+***H₀: Es besteht kein Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle in der Stadt Nashville (USA) im Zeitraum von 2020 bis 2024.***
 
 Diese Hypothesen werden mithilfe der ausgewählten Unfall- und Wetterdatensätze empirisch überprüft. Ziel der Analyse ist es, statistisch zu untersuchen, ob ein relevanter Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle vorliegt.
 
