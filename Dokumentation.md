@@ -110,7 +110,8 @@ Zur Kontrolle der gesammelten Web-Scraping-Daten wurde ein Python-Skript zur Anz
 
 Das Skript durchläuft systematisch alle Monate und Jahre im Zeitraum von **2020 bis 2024** und versucht, die jeweilige CSV-Datei zu laden.
 Für jeden Monat und jedes Jahr werden die vorhandenen Wetterdaten im Terminal ausgegeben.
-Vor der Ausgabe der jeweiligen Tabelle erscheint im Terminal eine Überschrift mit dem entsprechenden Monat und Jahr. Falls eine CSV-Datei nicht vorhanden ist, wird dies erkannt und die fehlende Datei protokolliert.
+Vor der Ausgabe der jeweiligen Tabelle erscheint im Terminal eine Überschrift mit dem entsprechenden Monat und Jahr. 
+Falls eine CSV-Datei nicht vorhanden ist, wird dies erkannt und die fehlende Datei protokolliert.
 
 <img width="1422" height="141" alt="Screenshot 2026-01-15 123254" src="https://github.com/user-attachments/assets/e9959c37-cd22-46d9-9b75-60068f177339" />
 
