@@ -105,7 +105,7 @@ Der oben gezeigte Prozess wurde für jeden Monat einzeln durchgeführt. So wurde
 
 ### 2.3. Anzeige der Web-Scraping-Daten
 
-[web-scraping-daten-anzeigen](../src/web_scraping_daten_anzeigen.py)
+[web-scraping-daten-anzeigen](src/web_scraping_daten_anzeigen.py)
 
 Zur Kontrolle der gesammelten Web-Scraping-Daten wurde ein Python-Skript zur Anzeige der Daten erstellt. Dabei wurden alle gespeicherten CSV-Dateien aus dem entsprechenden Ordner **web_scraping_daten** eingelesen.
 
