@@ -66,6 +66,7 @@ Anschließend wurden die Unfälle nach Datum zusammengefasst und als Übersicht 
 [Unfalldaten pro Tag (2020–2024)](daten/nashville_accidents_daily_2020_2024.csv)
 
 
+
 ## 2. Web-Scraping
 
 ### 2.1 Auswahl der Web-Scraping-Daten (Nashville, USA)
