@@ -9,9 +9,7 @@ Parallel zur Themenfindung wurden erste Anforderungen an das Projekt definiert, 
 
 Die Relevanz dieses Themas liegt in der zunehmenden Nutzung von Daten zur Verbesserung der Verkehrssicherheit. Durch die Analyse des Zusammenhangs zwischen Temperatur und Unfallzahlen soll untersucht werden, ob sich risikoreiche Muster erkennen lassen. Zudem zeigt das Projekt, wie unterschiedliche Datenquellen sinnvoll zusammengeführt und analysiert werden können.
 
-# Analyse zur Unfallentwicklung
-
-**Quelle:**  
+Analyse zur Unfallentwicklung: **Quelle:**  
 https://pmc.ncbi.nlm.nih.gov/articles/PMC11952289
 
 
