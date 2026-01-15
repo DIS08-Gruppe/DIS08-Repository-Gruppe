@@ -56,8 +56,9 @@ Anschließend wurden ausschließlich die Daten aus dem Zeitraum von 2020 bis 202
 
 [Bearbeitung der Rohdaten](src/bearbeitete_rohedaten.py)
 
-![Bearbeitete Rohdaten](terminal_ausgabe/Bearbeitete_Rohdaten.png)
 
+
+<img width="1170" height="512" alt="Bearbeitete_Rohdaten" src="https://github.com/user-attachments/assets/de72f0d5-7f46-42b4-b745-4bda9ce03aa5" />
 
 Der Python-Code zur Verarbeitung der Rohdaten wurde im Terminal erfolgreich ausgeführt. Dabei wurde überprüft, ob fehlende Werte im Datensatz vorhanden sind. Die Ausgabe zeigte, dass weder im ursprünglichen Datensatz noch im Tagesdatensatz fehlende Daten enthalten sind.  
 Anschließend wurden die Unfälle nach Datum zusammengefasst und als Übersicht ausgegeben. Zum Schluss wurde die bereinigte Datei als CSV gespeichert. Diese Datei wird in den nächsten Schritten für die weitere Verarbeitung und die Zusammenführung mit den Temperaturdaten verwendet.
