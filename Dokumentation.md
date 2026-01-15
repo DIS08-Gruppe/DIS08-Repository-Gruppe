@@ -134,7 +134,7 @@ Für jeden Monat wurden zunächst Temp_Max, Temp_Avg und Temp_Min sowie der Tag 
 
 Anschließend wurden die Temperaturwerte von **Fahrenheit** in **Celsius** umgerechnet und auf ganze Zahlen gerundet. Die Umrechnung erfolgte, da Celsius die in Europa übliche Temperatureinheit ist und eine bessere Vergleichbarkeit der Daten ermöglicht. Zudem erleichtert die Verwendung von Celsius die Interpretation der Ergebnisse in den späteren Analyse- und Modellierungsschritten.
 
-Danach wurde aus **Jahr**, **Monat** und **Tag** ein Datumsfeld (**Date**) erstellt, um eine konsistente Zeitstruktur für die weitere Analyse zu erhalten. Dieses Datumsformat bildet die Grundlage für die spätere Zusammenführung der Temperaturdaten mit den Verkehrsunfalldaten. Zeilen mit ungültigem oder fehlendem Datum wurden entfernt, um eine saubere Zeitreihe sicherzustellen.
+Danach wurde aus **Jahr**, **Monat** und **Tag** ein Datumsfeld (**Date**) erstellt, um eine einheitliche Zeitstruktur für die weitere Analyse zu erhalten. Das einheitliche Datumsformat bildet die Grundlage für die spätere Zusammenführung der Temperaturdaten mit den Verkehrsunfalldaten. Zeilen mit ungültigem oder fehlendem Datum wurden entfernt, um eine saubere Zeitreihe zu erhalten.
 
 Im nächsten Schritt wurden alle bereinigten Monatsdaten zu einem gemeinsamen Datensatz zusammengeführt und nach dem Datum sortiert. Der bereinigte Gesamtdatensatz wurde anschließend als CSV-Datei unter dem Namen **bereinigte_web_scraping_daten.csv** gespeichert.
 
