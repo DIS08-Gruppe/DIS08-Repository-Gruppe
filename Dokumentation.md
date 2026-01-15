@@ -149,6 +149,7 @@ Die Meldung **„Keine fehlenden Dateien“** zeigt, dass alle erwarteten monatl
 
 ## 3. Zusammenführung der bereinigten Unfall- und Temperaturdaten
 [merge](src/merge.py)
+
 Zur Zusammenführung der bereinigten Rohdaten (Verkehrsunfälle) mit den bereinigten Web-Scraping-Daten (Temperaturdaten) wurde ein Python-Skript verwendet. Nach dem Einlesen der beiden CSV-Dateien wurden die Datumsspalten in beiden Datensätzen erneut in ein einheitliches Datumsformat umgewandelt, da CSV-Dateien keine Datentypen speichern und Datumswerte beim Laden häufig als Text (String) interpretiert werden. Diese Vereinheitlichung ist notwendig, da die Zusammenführung der Daten auf Basis des Datums erfolgt.
 
 Vor dem Merge wurde ein Vergleich der Datumswerte durchgeführt, um mögliche zeitliche Abweichungen zwischen den beiden Datensätzen zu identifizieren. Im nächsten Schritt wurden die beiden Datensätze mithilfe eines Inner Joins über das Datumsfeld zusammengeführt, sodass nur Tage in den finalen Datensatz übernommen wurden, für die sowohl Unfall- als auch Temperaturdaten vorlagen.
@@ -157,13 +158,11 @@ Nach dem Merge wurde der Datensatz chronologisch sortiert und es wurde geprüft,
 
 Abschließend wurde der zusammengeführte Datensatz als CSV-Datei gespeichert und dient als Grundlage für die weitere Analyse des Zusammenhangs zwischen Temperatur und Unfallzahlen.
 
-
-
+<img width="1547" height="846" alt="Screenshot 2026-01-15 140939" src="https://github.com/user-attachments/assets/fc293d8a-816d-4be4-aaa9-1d1d0dfe416f" />
 
 Nach dem Ausführen des Merge-Skripts wurde im Terminal zunächst ein Vergleich der Datumswerte zwischen Unfalldaten und Temperaturdaten angezeigt. Dabei zeigte sich, dass ein Tag (08.11.2020) nur im Unfalldatensatz vorhanden war und in den Temperaturdaten fehlte. Dieser Tag wurde beim anschließenden Inner Join automatisch ausgeschlossen. Da nur ein einzelner Tag von insgesamt über 1800 Tagen betroffen ist, hat dies keinen relevanten Einfluss auf die weitere Analyse.
 
 Nach dem Merge wurde eine Prüfung auf fehlende Werte durchgeführt. Die Ausgabe bestätigte, dass im zusammengeführten Datensatz keine fehlenden Werte vorhanden sind. Anschließend wurde die erfolgreiche Speicherung des gemergten Datensatzes als CSV-Datei (**merged_nashville_accidents_temperature_daily_2020_2024.csv**) bestätigt.
-
 Zum Abschluss wurde im Terminal eine Vorschau des finalen Datensatzes angezeigt, die die täglichen Unfallzahlen sowie die zugehörigen Temperaturwerte enthält. Diese Vorschau bestätigt die korrekte Struktur sowie die chronologische Ordnung der zusammengeführten Daten.
 
 
