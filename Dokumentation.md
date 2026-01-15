@@ -128,7 +128,7 @@ Dieser Schritt diente der Überprüfung der Vollständigkeit und Struktur der We
 ### 2.4 Bereinigung und Zusammenführung der Web-Scraping-Daten
 [web_scraping_daten_bereinigen_und_zusammenfuehren](src/web_scraping_daten_bereinigen_und_zusammenfuehren.py)
 
-Zur Bereinigung und Zusammenführung der Web-Scraping-Daten wurde ein Python-Skript verwendet, das alle monatlichen CSV-Dateien aus dem Zeitraum **2020–2024** aus dem Ordner **web_scraping_daten** einliest.
+Zur Bereinigung und Zusammenführung der Web-Scraping-Daten wurde ein Python-Skript verwendet, das alle monatlichen CSV-Dateien aus dem Zeitraum **2020–2024** aus dem Ordner [web_scraping_daten](daten/web_scraping_daten) einliest.
 
 Für jeden Monat wurden zunächst nur die relevanten Temperaturspalten **Temp_Max**, **Temp_Avg** und **Temp_Min** sowie der Tag (**Day**) ausgewählt. Für die spätere Analyse wurde **Temp_Avg_C** als tägliche Durchschnittstemperatur verwendet.
 
