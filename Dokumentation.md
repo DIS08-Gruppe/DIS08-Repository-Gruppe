@@ -57,9 +57,9 @@ Anschließend wurden ausschließlich die Daten aus dem Zeitraum von 2020 bis 202
 [Bearbeitung der Rohdaten](src/bearbeitete_rohedaten.py)
 
 
-
+<br><br>
 <img width="1170" height="512" alt="Bearbeitete_Rohdaten" src="https://github.com/user-attachments/assets/de72f0d5-7f46-42b4-b745-4bda9ce03aa5" />
-
+<br><br>
 Der Python-Code zur Verarbeitung der Rohdaten wurde im Terminal erfolgreich ausgeführt. Dabei wurde überprüft, ob fehlende Werte im Datensatz vorhanden sind. Die Ausgabe zeigte, dass weder im ursprünglichen Datensatz noch im Tagesdatensatz fehlende Daten enthalten sind.  
 Anschließend wurden die Unfälle nach Datum zusammengefasst und als Übersicht ausgegeben. Zum Schluss wurde die bereinigte Datei als CSV gespeichert. Diese Datei wird in den nächsten Schritten für die weitere Verarbeitung und die Zusammenführung mit den Temperaturdaten verwendet.
 
@@ -139,9 +139,9 @@ Danach wurde aus **Jahr**, **Monat** und **Tag** ein Datumsfeld (**Date**) erste
 Im nächsten Schritt wurden alle bereinigten Monatsdaten zu einem gemeinsamen Datensatz zusammengeführt und nach dem Datum sortiert. Der bereinigte Gesamtdatensatz wurde anschließend als CSV-Datei unter dem Namen **[bereinigte_web_scraping_daten.csv](daten/bereinigte_web_scraping_daten.csv)** gespeichert.
 
 Zusätzlich wurde im Skript eine Fehlerbehandlung implementiert: Falls eine Monatsdatei nicht gefunden wird, wird dies erkannt und die entsprechende Datei protokolliert. Darüber hinaus werden auch andere mögliche Fehler beim Einlesen oder Verarbeiten der Dateien abgefangen und im Terminal ausgegeben. Dies ermöglicht eine transparente Kontrolle möglicher Probleme während der Datenverarbeitung.
-
+<br><br>
 <img width="1248" height="541" alt="Screenshot 2026-01-15 135006" src="https://github.com/user-attachments/assets/e4aa9c5d-8117-4d3f-9475-acc602d1c3bf" />
-
+<br><br>
 Nach dem Ausführen des Skripts wurde im Terminal eine Vorschau der bereinigten Daten angezeigt. Diese Vorschau zeigt die Spalten **Date** sowie die **maximale, durchschnittliche und minimale** Temperatur nach der Umrechnung in Celsius. Die Daten wurden chronologisch verarbeitet und ausgegeben.
 
 Zudem wurde die erfolgreiche Speicherung der bereinigten Daten in einer einzelnen CSV-Datei bestätigt. Die Datei wurde unter dem Namen **[bereinigte_web_scraping_daten.csv](daten/bereinigte_web_scraping_daten.csv)** gespeichert. 
@@ -159,9 +159,9 @@ Vor dem Merge wurde ein Vergleich der Datumswerte durchgeführt, um mögliche ze
 Nach dem Merge wurde der Datensatz chronologisch sortiert und es wurde geprüft, ob fehlende Werte vorhanden sind, um sicherzustellen, dass der zusammengeführte Datensatz vollständig und für die weitere Analyse geeignet ist.
 
 Abschließend wurde der zusammengeführte Datensatz als CSV-Datei gespeichert und dient als Grundlage für die weitere Analyse des Zusammenhangs zwischen Temperatur und Unfallzahlen.
-
+<br><br>
 <img width="1547" height="846" alt="Screenshot 2026-01-15 140939" src="https://github.com/user-attachments/assets/fc293d8a-816d-4be4-aaa9-1d1d0dfe416f" />
-
+<br><br>
 Nach dem Ausführen des Merge-Skripts wurde im Terminal zunächst ein Vergleich der Datumswerte zwischen Unfalldaten und Temperaturdaten angezeigt. Dabei zeigte sich, dass ein Tag (08.11.2020) nur im Unfalldatensatz vorhanden war und in den Temperaturdaten fehlte. Zum Vergleich: https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2020-11
 
 Dieser Tag wurde beim anschließenden Inner Join automatisch ausgeschlossen. Da nur ein einzelner Tag von insgesamt über 1800 Tagen betroffen ist, hat dies keinen relevanten Einfluss auf die weitere Analyse.
