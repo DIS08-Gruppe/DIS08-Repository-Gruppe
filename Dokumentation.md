@@ -172,7 +172,7 @@ Nach dem Merge wurde eine Überprüfung auf fehlende Werte durchgeführt. Die Au
 Zum Abschluss wurde im Terminal eine Vorschau des finalen Datensatzes angezeigt, die die täglichen Unfallzahlen sowie die zugehörigen Temperaturwerte enthält. Diese Vorschau bestätigt die korrekte Struktur sowie die chronologische Ordnung der zusammengeführten Daten.
 
 
-## Analyse der Daten und grafische Darstellung
+## 4. Analyse der Daten und grafische Darstellung
 
 Die zusammengeführten Daten (2020–2024) wurden analysiert und grafisch dargestellt, um den Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle zu untersuchen.  
 Ziel war es zu prüfen, ob eine niedrigere Durchschnittstemperatur zu einer höheren Unfallanzahl führt.
