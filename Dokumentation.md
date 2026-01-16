@@ -182,7 +182,7 @@ Ziel war es zu prüfen, ob eine niedrigere Durchschnittstemperatur zu einer höh
 ---
 
 ### Schritte der Analyse
-[ Zum Analysen pythoncode](src/analyse.py)
+[ Zum Analysen Pythoncode](src/analyse.py)
 
 
 Im ersten Schritt wurden die zusammengeführten Daten eingelesen und die relevanten Variablen (Temperatur (Avg)) und Unfallanzahl für die Analyse ausgewählt.  
