@@ -195,6 +195,10 @@ Das Streudiagramm visualisiert den Zusammenhang zwischen der täglichen Durchsch
 
 
 Der Korrelationskoeffizient wurde berechnet, um die Stärke des Zusammenhangs zu bestimmen.
+<br><br>
+![WhatsApp Image 2026-01-16 at 11 08 13](https://github.com/user-attachments/assets/fd8cf81d-101a-4f95-880a-affe97752b1b)
+<br><br>
+
 
 Der Korrelationskoeffizient liegt bei **r = -0,029 (mit Outlier)** bzw. **r = -0,001 (ohne Outlier)**. Dies deutet auf einen nicht relevanten Zusammenhang zwischen Temperatur und Unfallanzahl hin.
 
