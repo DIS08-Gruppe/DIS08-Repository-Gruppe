@@ -249,7 +249,7 @@ Die Ergebnisse zeigen, dass entgegen der Erwartung bei niedrigeren Temperaturen 
 
 Ein möglicher Grund dafür, dass es mehr Unfälle bei höheren Temperaturen in dem Fall gibt, ist, dass bei niedrigen Temperaturen weniger Verkehr auf den Straßen stattfindet, da Menschen häufiger zuhause bleiben oder Fahrten vermeiden. Darüber hinaus kann es sein, dass Menschen bei niedrigen Temperaturen vorsichtiger fahren, während sie sich bei höheren Temperaturen sicherer fühlen und dadurch unaufmerksamer sind.
 
-Letztendlich deuten die Daten aus Nashville (2020–2024) darauf hin, dass tendenziell gilt: **Je höher die Temperatur, desto höher ist die Anzahl der Verkehrsunfälle (positiver Zusammenhang).**
+Letztendlich deuten die Daten aus Nashville (2020–2024) darauf hin, dass tendenziell gilt: **Je höher die durchschnittliche Temperatur, desto höher ist die Anzahl der Verkehrsunfälle (positiver Zusammenhang).**
 
 
 
