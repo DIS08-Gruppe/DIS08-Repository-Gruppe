@@ -172,6 +172,64 @@ Nach dem Merge wurde eine Überprüfung auf fehlende Werte durchgeführt. Die Au
 Zum Abschluss wurde im Terminal eine Vorschau des finalen Datensatzes angezeigt, die die täglichen Unfallzahlen sowie die zugehörigen Temperaturwerte enthält. Diese Vorschau bestätigt die korrekte Struktur sowie die chronologische Ordnung der zusammengeführten Daten.
 
 
+## Analyse der Daten und grafische Darstellung
+
+Die zusammengeführten Daten (2020–2024) wurden analysiert und grafisch dargestellt, um den Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle zu untersuchen.  
+Ziel war es zu prüfen, ob eine niedrigere Durchschnittstemperatur zu einer höheren Unfallanzahl führt.
+
+---
+
+### Schritte der Analyse
+
+Im ersten Schritt wurden die zusammengeführten Daten eingelesen und die relevanten Variablen (Temperatur (Avg) und Unfallanzahl) für die Analyse ausgewählt.  
+Um die Analyse besser interpretieren zu können, wurden drei Diagramme erstellt.
+
+---
+
+### 1) Streudiagramm
+
+Das Streudiagramm visualisiert den Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle pro Tag in Nashville. Insgesamt liegen die meisten Werte in einem ähnlichen Bereich, während einzelne Tage deutlich höhere Unfallzahlen aufweisen und als Ausreißer („Outliers“) hervorgehoben sind. Die nahezu horizontale Regressionslinie deutet darauf hin, dass nur ein schwacher Zusammenhang zwischen niedrigen Temperaturen und einer erhöhten Unfallanzahl besteht.
+
+Der Korrelationskoeffizient wurde berechnet, um die Stärke des Zusammenhangs zu bestimmen.
+
+Der Korrelationskoeffizient liegt bei **r = -0,029 (mit Outlier)** bzw. **r = -0,001 (ohne Outlier)**. Dies deutet auf einen nicht relevanten Zusammenhang zwischen Temperatur und Unfallanzahl hin.
+
+---
+
+### 2) Diagramm für alle Temperaturwerte
+
+Das Diagramm für alle Temperaturwerte zeigt, dass die beiden Regressionslinien (mit und ohne Outlier) nahezu identisch verlaufen und somit auf einen nicht relevanten Zusammenhang zwischen Temperatur und Unfallanzahl hindeuten.
+
+Nach dem Vergleich mit und ohne Outlier ergibt sich folgendes Bild:  
+Am Anfang zeigte sich mit Outliern ein schwacher Zusammenhang zwischen der durchschnittlichen Temperatur und der Unfallanzahl. Nach der Entfernung der Outlier ist jedoch kein relevanter Zusammenhang zwischen der durchschnittlichen Temperatur und der Unfallanzahl mehr erkennbar.
+
+**Extrainfo:**  
+**Unabhängige Variable (X):**  
+Durchschnittstemperatur (Temp_Avg_C)  
+→ die Temperatur ist der Einflussfaktor  
+
+**Abhängige Variable (Y):**  
+Anzahl der Verkehrsunfälle pro Tag (Accidents_Count)  
+→ die Unfallanzahl ist das Ergebnis, das sich (eventuell) durch Temperatur verändert  
+
+Es wurde die Durchschnittstemperatur (Avg) verwendet, weil sie die Temperatur des ganzen Tages am besten widerspiegelt, während Max/Min nur Extremwerte sind und die Ergebnisse stärker verzerren können.  
+Die Avg-Temperatur lag im niedrigsten bei −15 °C und im höchsten bei 33 °C.
+
+---
+
+### 3) Temperaturen < 0 °C
+
+Das dritte Diagramm berücksichtigt ausschließlich Tage mit Temperaturen unter 0 °C, um den Zusammenhang zwischen sehr niedrigen Temperaturen und der Unfallanzahl gezielt zu untersuchen.
+
+Die Ergebnisse zeigen, dass entgegen der Erwartung bei niedrigeren Temperaturen nicht mehr Unfälle auftreten. Stattdessen weist die Analyse auf einen schwach positiven Zusammenhang hin (**r = 0,167 mit Outlier** bzw. **r = 0,19 ohne Outlier**). Auch der Temperatur-Effekt der linearen Regression ist positiv (**β1 = 1,321 mit Outlier** bzw. **β1 = 0,973 ohne Outlier**), was bedeutet, dass mit steigender Temperatur tendenziell mehr Unfälle beobachtet werden können.
+
+---
+
+## Diskussion der Ergebnisse
+
+Ein möglicher Grund dafür, dass es mehr Unfälle bei höheren Temperaturen in dem Fall gibt, ist, dass bei niedrigen Temperaturen weniger Verkehr auf den Straßen stattfindet, da Menschen häufiger zuhause bleiben oder Fahrten vermeiden. Darüber hinaus kann es sein, dass Menschen bei niedrigen Temperaturen vorsichtiger fahren, während sie sich bei höheren Temperaturen sicherer fühlen und dadurch unaufmerksamer sind.
+
+Letztendlich deuten die Daten aus Nashville (2020–2024) darauf hin, dass tendenziell gilt: **Je höher die Temperatur, desto höher ist die Anzahl der Verkehrsunfälle (positiver Zusammenhang).**
 
 
 
