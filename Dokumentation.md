@@ -162,7 +162,9 @@ Abschließend wurde der zusammengeführte Datensatz als CSV-Datei gespeichert un
 
 <img width="1547" height="846" alt="Screenshot 2026-01-15 140939" src="https://github.com/user-attachments/assets/fc293d8a-816d-4be4-aaa9-1d1d0dfe416f" />
 
-Nach dem Ausführen des Merge-Skripts wurde im Terminal zunächst ein Vergleich der Datumswerte zwischen Unfalldaten und Temperaturdaten angezeigt. Dabei zeigte sich, dass ein Tag (08.11.2020) nur im Unfalldatensatz vorhanden war und in den Temperaturdaten fehlte. Dieser Tag wurde beim anschließenden Inner Join automatisch ausgeschlossen. Da nur ein einzelner Tag von insgesamt über 1800 Tagen betroffen ist, hat dies keinen relevanten Einfluss auf die weitere Analyse.
+Nach dem Ausführen des Merge-Skripts wurde im Terminal zunächst ein Vergleich der Datumswerte zwischen Unfalldaten und Temperaturdaten angezeigt. Dabei zeigte sich, dass ein Tag (08.11.2020) nur im Unfalldatensatz vorhanden war und in den Temperaturdaten fehlte. Zum Vergleich: https://www.wunderground.com/history/monthly/us/tn/nashville/KJWN/date/2020-11
+
+Dieser Tag wurde beim anschließenden Inner Join automatisch ausgeschlossen. Da nur ein einzelner Tag von insgesamt über 1800 Tagen betroffen ist, hat dies keinen relevanten Einfluss auf die weitere Analyse.
 
 Nach dem Merge wurde eine Überprüfung auf fehlende Werte durchgeführt. Die Ausgabe bestätigte, dass im zusammengeführten Datensatz keine fehlenden Werte vorhanden sind. Anschließend wurde die erfolgreiche Speicherung des gemergten Datensatzes als CSV-Datei  
 **[merged_nashville_accidents_temperature_daily_2020_2024.csv](daten/merged_nashville_accidents_temperature_daily_2020_2024.csv)** bestätigt.
