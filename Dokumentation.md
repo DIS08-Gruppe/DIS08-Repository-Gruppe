@@ -213,7 +213,7 @@ Das Diagramm für alle Temperaturwerte zeigt, dass die beiden Regressionslinien 
 <br><br>
 
 
-Nach dem Vergleich mit und ohne Outlier ergibt sich folgendes Bild:  
+Nach dem Vergleich mit und ohne Outlier ergibt sich folgendes Ergebnis:  
 Am Anfang zeigte sich mit Outliern ein schwacher Zusammenhang zwischen der durchschnittlichen Temperatur und der Unfallanzahl. Nach der Entfernung der Outlier ist jedoch kein relevanter Zusammenhang zwischen der durchschnittlichen Temperatur und der Unfallanzahl mehr erkennbar.
 
 **Extrainfo:**  
