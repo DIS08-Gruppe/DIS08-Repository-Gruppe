@@ -223,7 +223,7 @@ Durchschnittstemperatur (Temp_Avg_C)
 
 **Abhängige Variable (Y):**  
 Anzahl der Verkehrsunfälle pro Tag (Accidents_Count)  
-→ die Unfallanzahl ist das Ergebnis, das sich (eventuell) durch Temperatur verändert  
+→ die Unfallanzahl ist das Ergebnis, das sich (eventuell) durch die Temperatur verändert  
 
 Es wurde die Durchschnittstemperatur (Avg) verwendet, weil sie die Temperatur des ganzen Tages am besten widerspiegelt, während Max/Min nur Extremwerte sind und die Ergebnisse stärker verzerren können.  
 Die Avg-Temperatur lag im niedrigsten bei −15 °C und im höchsten bei 33 °C.
