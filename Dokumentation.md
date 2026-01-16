@@ -204,6 +204,11 @@ Der Korrelationskoeffizient liegt bei **r = -0,029 (mit Outlier)** bzw. **r = -0
 
 Das Diagramm für alle Temperaturwerte zeigt, dass die beiden Regressionslinien (mit und ohne Outlier) nahezu identisch verlaufen und somit auf einen nicht relevanten Zusammenhang zwischen Temperatur und Unfallanzahl hindeuten.
 
+<br><br>
+<img width="1256" height="652" alt="diagramm_temp_unfaelle" src="https://github.com/user-attachments/assets/f82a4293-4b5b-47fe-96bb-b494ef1135ed" />
+<br><br>
+
+
 Nach dem Vergleich mit und ohne Outlier ergibt sich folgendes Bild:  
 Am Anfang zeigte sich mit Outliern ein schwacher Zusammenhang zwischen der durchschnittlichen Temperatur und der Unfallanzahl. Nach der Entfernung der Outlier ist jedoch kein relevanter Zusammenhang zwischen der durchschnittlichen Temperatur und der Unfallanzahl mehr erkennbar.
 
