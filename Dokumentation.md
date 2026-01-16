@@ -190,6 +190,10 @@ Um die Analyse besser interpretieren zu können, wurden drei Diagramme erstellt.
 
 Das Streudiagramm visualisiert den Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle pro Tag in Nashville. Insgesamt liegen die meisten Werte in einem ähnlichen Bereich, während einzelne Tage deutlich höhere Unfallzahlen aufweisen und als Ausreißer („Outliers“) hervorgehoben sind. Die nahezu horizontale Regressionslinie deutet darauf hin, dass nur ein schwacher Zusammenhang zwischen niedrigen Temperaturen und einer erhöhten Unfallanzahl besteht.
 
+<img width="1256" height="652" alt="diagramm_temp_unfaelle_outlier_alle_daten" src="https://github.com/user-attachments/assets/b8070340-e148-4e98-8793-2ad79aa290da" />
+
+
+
 Der Korrelationskoeffizient wurde berechnet, um die Stärke des Zusammenhangs zu bestimmen.
 
 Der Korrelationskoeffizient liegt bei **r = -0,029 (mit Outlier)** bzw. **r = -0,001 (ohne Outlier)**. Dies deutet auf einen nicht relevanten Zusammenhang zwischen Temperatur und Unfallanzahl hin.
