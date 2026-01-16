@@ -4,9 +4,10 @@
 - Ogyun Mustafov
 - Walaa Harkal
 - Heba Haikal
-- Souhail Sammy Naji
-- Katharina Kratz
 - Teo Peters
+- Souhail Sammy Naji
+- Katharina Kratz (abgemeldet)
+
 
 ## Forschungsfrage und Hypothesen
 
