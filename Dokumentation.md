@@ -229,6 +229,9 @@ Die Avg-Temperatur lag im niedrigsten bei −15 °C und im höchsten bei 33 °C.
 ### 3) Temperaturen < 0 °C
 
 Das dritte Diagramm berücksichtigt ausschließlich Tage mit Temperaturen unter 0 °C, um den Zusammenhang zwischen sehr niedrigen Temperaturen und der Unfallanzahl gezielt zu untersuchen.
+<br><br>
+<img width="1256" height="652" alt="diagramm_entferne_fur_alle_temperaturdaten" src="https://github.com/user-attachments/assets/8385d091-5826-4d23-b39c-ee0095171567" />
+<br><br>
 
 Die Ergebnisse zeigen, dass entgegen der Erwartung bei niedrigeren Temperaturen nicht mehr Unfälle auftreten. Stattdessen weist die Analyse auf einen schwach positiven Zusammenhang hin (**r = 0,167 mit Outlier** bzw. **r = 0,19 ohne Outlier**). Auch der Temperatur-Effekt der linearen Regression ist positiv (**β1 = 1,321 mit Outlier** bzw. **β1 = 0,973 ohne Outlier**), was bedeutet, dass mit steigender Temperatur tendenziell mehr Unfälle beobachtet werden können.
 
