@@ -177,6 +177,8 @@ Zum Abschluss wurde im Terminal eine Vorschau des finalen Datensatzes angezeigt,
 Die zusammengeführten Daten (2020–2024) wurden analysiert und grafisch dargestellt, um den Zusammenhang zwischen der täglichen Durchschnittstemperatur und der Anzahl der Verkehrsunfälle zu untersuchen.  
 Ziel war es zu prüfen, ob eine niedrigere Durchschnittstemperatur zu einer höheren Unfallanzahl führt.
 
+[Zu den Diagrammen](diagramme)
+
 ---
 
 ### Schritte der Analyse
